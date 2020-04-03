@@ -1,4 +1,3 @@
 temp/
-*.pdf
-OCR/*
-Prelucrate/*
+OCR/**/*
+Prelucrate/**/*
