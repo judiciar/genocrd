@@ -1,0 +1,15 @@
+[Unit]
+Description=Daemon OCR general CA Galati
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/localadmin/genocr/genocrd
+ExecStop=/bin/kill -- $MAINPID
+KillMode=control-group
+RemainAfterExit=no
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
